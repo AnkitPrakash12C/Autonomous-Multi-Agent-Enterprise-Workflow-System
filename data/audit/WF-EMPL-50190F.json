@@ -1,0 +1,63 @@
+[
+  {
+    "timestamp": "2026-03-29T18:11:36.998251",
+    "workflow_id": "WF-EMPL-50190F",
+    "agent": "OrchestratorAgent",
+    "action": "workflow_started",
+    "details": {
+      "workflow_id": "WF-EMPL-50190F",
+      "workflow_type": "employee_onboarding",
+      "input": {
+        "name": "Rahul Sharma",
+        "employee_id": "EMP2026001",
+        "department": "Engineering"
+      }
+    },
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-03-29T18:11:37.133444",
+    "workflow_id": "WF-EMPL-50190F",
+    "agent": "DataRetrievalAgent",
+    "action": "start_retrieval",
+    "details": {
+      "workflow_type": "employee_onboarding",
+      "input": {
+        "name": "Rahul Sharma",
+        "employee_id": "EMP2026001",
+        "department": "Engineering"
+      }
+    },
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-03-29T18:11:37.135137",
+    "workflow_id": "WF-EMPL-50190F",
+    "agent": "DataRetrievalAgent",
+    "action": "verify_employee",
+    "details": {
+      "verified": true,
+      "employee_id": "EMP2026001",
+      "name": "Rahul Sharma",
+      "department": "Engineering",
+      "joining_date": "2026-03-29",
+      "manager": "Rajesh Kumar",
+      "location": "Bangalore"
+    },
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-03-29T18:11:47.735792",
+    "workflow_id": "WF-EMPL-50190F",
+    "agent": "DataRetrievalAgent",
+    "action": "validate_data",
+    "details": {
+      "valid": true,
+      "completeness_score": 85,
+      "missing_fields": [],
+      "warnings": [],
+      "summary": "Data looks good"
+    },
+    "status": "success"
+  }
+]

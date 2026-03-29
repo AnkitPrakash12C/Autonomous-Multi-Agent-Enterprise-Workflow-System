@@ -1,0 +1,103 @@
+{
+  "workflow_id": "WF-PROC-2313F9",
+  "workflow_type": "procurement_to_payment",
+  "input_data": {
+    "item": "MacBook Pro",
+    "quantity": 5,
+    "amount": 125000.0
+  },
+  "status": "completed",
+  "current_step": 4,
+  "steps_completed": [
+    "data_retrieval",
+    "decision",
+    "action_execution",
+    "verification"
+  ],
+  "steps_failed": [],
+  "retry_counts": {},
+  "collected_data": {
+    "budget_check": {
+      "department": "Engineering",
+      "cost_center": "CC-001",
+      "requested_amount": 125000.0,
+      "available_budget": 302030.79,
+      "approved": true,
+      "budget_code": "BDG-7083"
+    },
+    "vendor_quotes": {
+      "item": "MacBook Pro",
+      "quantity": 5,
+      "quotes": [
+        {
+          "vendor": "TechSupply Co.",
+          "unit_price": 236.44,
+          "delivery_days": 5,
+          "total": 1182.2
+        },
+        {
+          "vendor": "QuickProcure Ltd.",
+          "unit_price": 374.84,
+          "delivery_days": 3,
+          "total": 1874.2
+        },
+        {
+          "vendor": "EnterpriseGoods Inc.",
+          "unit_price": 422.27,
+          "delivery_days": 7,
+          "total": 2111.35
+        }
+      ],
+      "recommended": "TechSupply Co."
+    },
+    "validation": {
+      "valid": true,
+      "completeness_score": 80,
+      "missing_fields": [],
+      "warnings": [],
+      "summary": "Data collected successfully (validation skipped)"
+    }
+  },
+  "decisions": [
+    {
+      "decision": "PROCEED",
+      "requires_human_approval": false,
+      "approval_reason": "",
+      "approval_step": null,
+      "automated_steps": [
+        "validate_purchase_request",
+        "check_budget_availability",
+        "get_vendor_quotes",
+        "approval_routing",
+        "raise_purchase_order",
+        "goods_receipt_check",
+        "invoice_matching",
+        "trigger_payment",
+        "verify_completion"
+      ],
+      "risk_level": "LOW",
+      "risk_reasons": [
+        "Standard workflow"
+      ],
+      "next_actions": [
+        "Execute all workflow steps autonomously"
+      ],
+      "business_rules_applied": [
+        "Standard enterprise policy",
+        "Budget threshold check"
+      ],
+      "estimated_completion_hours": 18,
+      "decision_rationale": "All pre-conditions met. Proceeding autonomously."
+    }
+  ],
+  "actions_taken": [
+    "purchase_order",
+    "po_notification",
+    "execution_summary"
+  ],
+  "errors": [],
+  "created_at": "2026-03-29T18:25:57.211717",
+  "updated_at": "2026-03-29T18:25:59.187546",
+  "human_approvals_needed": [],
+  "human_approvals_received": []
+}

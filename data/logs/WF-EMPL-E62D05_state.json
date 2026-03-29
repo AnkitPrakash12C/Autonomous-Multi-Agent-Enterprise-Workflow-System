@@ -1,0 +1,44 @@
+{
+  "workflow_id": "WF-EMPL-E62D05",
+  "workflow_type": "employee_onboarding",
+  "input_data": {
+    "name": "Rahul Sharma",
+    "employee_id": "EMP2026001",
+    "department": "Engineering"
+  },
+  "status": "failed",
+  "current_step": 0,
+  "steps_completed": [],
+  "steps_failed": [
+    "data_retrieval",
+    "data_retrieval",
+    "data_retrieval"
+  ],
+  "retry_counts": {
+    "data_retrieval": 3
+  },
+  "collected_data": {},
+  "decisions": [],
+  "actions_taken": [],
+  "errors": [
+    {
+      "step": "data_retrieval",
+      "error": "404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+      "timestamp": "2026-03-29T17:22:27.572221"
+    },
+    {
+      "step": "data_retrieval",
+      "error": "404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+      "timestamp": "2026-03-29T17:22:28.740907"
+    },
+    {
+      "step": "data_retrieval",
+      "error": "404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+      "timestamp": "2026-03-29T17:22:29.903875"
+    }
+  ],
+  "created_at": "2026-03-29T17:22:27.239658",
+  "updated_at": "2026-03-29T17:22:29.907153",
+  "human_approvals_needed": [],
+  "human_approvals_received": []
+}

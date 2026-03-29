@@ -1,0 +1,97 @@
+{
+  "workflow_id": "WF-MEET-F68A14",
+  "workflow_type": "meeting_intelligence",
+  "input_data": {
+    "req_id": "DEFAULT_SYS_GEN"
+  },
+  "status": "completed",
+  "current_step": 4,
+  "steps_completed": [
+    "data_retrieval",
+    "decision",
+    "action_execution",
+    "verification"
+  ],
+  "steps_failed": [],
+  "retry_counts": {},
+  "collected_data": {
+    "meeting_data": {
+      "decisions": [
+        "Launch new product feature by Q3 end",
+        "Hire 3 more engineers in backend team",
+        "Migrate infrastructure to AWS by December"
+      ],
+      "action_items": [
+        {
+          "task": "Finalize feature spec",
+          "owner": "Product Team",
+          "deadline": "Next Friday"
+        },
+        {
+          "task": "Post job descriptions",
+          "owner": "HR Team",
+          "deadline": "This week"
+        },
+        {
+          "task": "Create migration plan",
+          "owner": "DevOps Team",
+          "deadline": "Two weeks"
+        }
+      ],
+      "participants": [
+        "CEO",
+        "CTO",
+        "Product Lead",
+        "HR Head"
+      ],
+      "meeting_date": "2026-03-29"
+    },
+    "validation": {
+      "valid": true,
+      "completeness_score": 80,
+      "missing_fields": [],
+      "warnings": [],
+      "summary": "Data collected successfully (validation skipped)"
+    }
+  },
+  "decisions": [
+    {
+      "decision": "PROCEED",
+      "requires_human_approval": false,
+      "approval_reason": "",
+      "approval_step": null,
+      "automated_steps": [
+        "ingest_meeting_notes",
+        "extract_decisions",
+        "identify_action_items",
+        "assign_owners",
+        "set_deadlines",
+        "send_notifications",
+        "track_completion",
+        "verify_completion"
+      ],
+      "risk_level": "LOW",
+      "risk_reasons": [
+        "Standard workflow"
+      ],
+      "next_actions": [
+        "Execute all workflow steps autonomously"
+      ],
+      "business_rules_applied": [
+        "Standard enterprise policy",
+        "Budget threshold check"
+      ],
+      "estimated_completion_hours": 6,
+      "decision_rationale": "All pre-conditions met. Proceeding autonomously."
+    }
+  ],
+  "actions_taken": [
+    "task_notifications",
+    "execution_summary"
+  ],
+  "errors": [],
+  "created_at": "2026-03-29T19:31:11.163411",
+  "updated_at": "2026-03-29T19:31:13.277965",
+  "human_approvals_needed": [],
+  "human_approvals_received": []
+}

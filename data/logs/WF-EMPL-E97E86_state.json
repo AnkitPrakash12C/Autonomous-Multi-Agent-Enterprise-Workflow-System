@@ -1,0 +1,76 @@
+{
+  "workflow_id": "WF-EMPL-E97E86",
+  "workflow_type": "employee_onboarding",
+  "input_data": {
+    "request_id": "WF-1774789803"
+  },
+  "status": "completed",
+  "current_step": 4,
+  "steps_completed": [
+    "data_retrieval",
+    "decision",
+    "action_execution",
+    "verification"
+  ],
+  "steps_failed": [],
+  "retry_counts": {},
+  "collected_data": {
+    "employee_record": {
+      "verified": true,
+      "employee_id": "EMP001",
+      "name": "New Employee",
+      "department": "Engineering",
+      "joining_date": "2026-03-29",
+      "manager": "Rajesh Kumar",
+      "location": "Bangalore"
+    },
+    "validation": {
+      "valid": true,
+      "completeness_score": 80,
+      "missing_fields": [],
+      "warnings": [],
+      "summary": "Data collected successfully (validation skipped)"
+    }
+  },
+  "decisions": [
+    {
+      "decision": "PROCEED",
+      "requires_human_approval": false,
+      "approval_reason": "",
+      "approval_step": null,
+      "automated_steps": [
+        "verify_employee_details",
+        "create_accounts",
+        "assign_equipment",
+        "schedule_orientation",
+        "assign_buddy",
+        "send_welcome_email",
+        "verify_completion"
+      ],
+      "risk_level": "LOW",
+      "risk_reasons": [
+        "Standard workflow"
+      ],
+      "next_actions": [
+        "Execute all workflow steps autonomously"
+      ],
+      "business_rules_applied": [
+        "Standard enterprise policy",
+        "Budget threshold check"
+      ],
+      "estimated_completion_hours": 12,
+      "decision_rationale": "All pre-conditions met. Proceeding autonomously."
+    }
+  ],
+  "actions_taken": [
+    "accounts_created",
+    "equipment_assigned",
+    "welcome_email",
+    "execution_summary"
+  ],
+  "errors": [],
+  "created_at": "2026-03-29T18:40:03.941116",
+  "updated_at": "2026-03-29T18:40:08.731022",
+  "human_approvals_needed": [],
+  "human_approvals_received": []
+}

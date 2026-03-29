@@ -1,0 +1,114 @@
+[
+  {
+    "timestamp": "2026-03-29T17:45:54.133973",
+    "workflow_id": "WF-EMPL-7A83C0",
+    "agent": "OrchestratorAgent",
+    "action": "workflow_started",
+    "details": {
+      "workflow_id": "WF-EMPL-7A83C0",
+      "workflow_type": "employee_onboarding",
+      "input": {
+        "name": "Rahul Sharma",
+        "employee_id": "EMP2026001",
+        "department": "Engineering"
+      }
+    },
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-03-29T17:45:54.141112",
+    "workflow_id": "WF-EMPL-7A83C0",
+    "agent": "DataRetrievalAgent",
+    "action": "start_retrieval",
+    "details": {
+      "workflow_type": "employee_onboarding",
+      "input": {
+        "name": "Rahul Sharma",
+        "employee_id": "EMP2026001",
+        "department": "Engineering"
+      }
+    },
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-03-29T17:45:54.144489",
+    "workflow_id": "WF-EMPL-7A83C0",
+    "agent": "DataRetrievalAgent",
+    "action": "verify_employee",
+    "details": {
+      "verified": true,
+      "employee_id": "EMP2026001",
+      "name": "Rahul Sharma",
+      "department": "Engineering",
+      "joining_date": "2026-03-29",
+      "manager": "Rajesh Kumar",
+      "location": "Bangalore"
+    },
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-03-29T17:45:56.193865",
+    "workflow_id": "WF-EMPL-7A83C0",
+    "agent": "DataRetrievalAgent",
+    "action": "gemini_validation_fallback",
+    "details": {
+      "error": "404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+    },
+    "status": "warning"
+  },
+  {
+    "timestamp": "2026-03-29T17:45:56.193865",
+    "workflow_id": "WF-EMPL-7A83C0",
+    "agent": "DataRetrievalAgent",
+    "action": "validate_data",
+    "details": {
+      "valid": true,
+      "completeness_score": 80,
+      "missing_fields": [],
+      "warnings": [],
+      "summary": "Data collected successfully (validation skipped)"
+    },
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-03-29T17:45:56.210758",
+    "workflow_id": "WF-EMPL-7A83C0",
+    "agent": "DecisionAgent",
+    "action": "start_decision",
+    "details": {
+      "workflow_type": "employee_onboarding"
+    },
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-03-29T17:45:57.742942",
+    "workflow_id": "WF-EMPL-7A83C0",
+    "agent": "DecisionAgent",
+    "action": "start_decision",
+    "details": {
+      "workflow_type": "employee_onboarding"
+    },
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-03-29T17:45:59.924948",
+    "workflow_id": "WF-EMPL-7A83C0",
+    "agent": "DecisionAgent",
+    "action": "start_decision",
+    "details": {
+      "workflow_type": "employee_onboarding"
+    },
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-03-29T17:46:00.357355",
+    "workflow_id": "WF-EMPL-7A83C0",
+    "agent": "OrchestratorAgent",
+    "action": "workflow_failed",
+    "details": {
+      "step": "decision",
+      "error": "404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+    },
+    "status": "error"
+  }
+]

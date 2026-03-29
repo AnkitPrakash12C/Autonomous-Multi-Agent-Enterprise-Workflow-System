@@ -1,0 +1,155 @@
+[
+  {
+    "timestamp": "2026-03-29T17:26:15.534219",
+    "workflow_id": "WF-EMPL-F86C40",
+    "agent": "OrchestratorAgent",
+    "action": "workflow_started",
+    "details": {
+      "workflow_id": "WF-EMPL-F86C40",
+      "workflow_type": "employee_onboarding",
+      "input": {
+        "name": "Rahul Sharma",
+        "employee_id": "EMP2026001",
+        "department": "Engineering"
+      }
+    },
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-03-29T17:26:15.552668",
+    "workflow_id": "WF-EMPL-F86C40",
+    "agent": "DataRetrievalAgent",
+    "action": "start_retrieval",
+    "details": {
+      "workflow_type": "employee_onboarding",
+      "input": {
+        "name": "Rahul Sharma",
+        "employee_id": "EMP2026001",
+        "department": "Engineering"
+      }
+    },
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-03-29T17:26:15.554085",
+    "workflow_id": "WF-EMPL-F86C40",
+    "agent": "DataRetrievalAgent",
+    "action": "verify_employee",
+    "details": {
+      "verified": true,
+      "employee_id": "EMP2026001",
+      "name": "Rahul Sharma",
+      "department": "Engineering",
+      "joining_date": "2026-03-29",
+      "manager": "Rajesh Kumar",
+      "location": "Bangalore"
+    },
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-03-29T17:26:15.691724",
+    "workflow_id": "WF-EMPL-F86C40",
+    "agent": "OrchestratorAgent",
+    "action": "retry_data_retrieval",
+    "details": {
+      "attempt": 1,
+      "error": "404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+    },
+    "status": "warning"
+  },
+  {
+    "timestamp": "2026-03-29T17:26:16.697537",
+    "workflow_id": "WF-EMPL-F86C40",
+    "agent": "DataRetrievalAgent",
+    "action": "start_retrieval",
+    "details": {
+      "workflow_type": "employee_onboarding",
+      "input": {
+        "name": "Rahul Sharma",
+        "employee_id": "EMP2026001",
+        "department": "Engineering"
+      }
+    },
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-03-29T17:26:16.700018",
+    "workflow_id": "WF-EMPL-F86C40",
+    "agent": "DataRetrievalAgent",
+    "action": "verify_employee",
+    "details": {
+      "verified": true,
+      "employee_id": "EMP2026001",
+      "name": "Rahul Sharma",
+      "department": "Engineering",
+      "joining_date": "2026-03-29",
+      "manager": "Rajesh Kumar",
+      "location": "Bangalore"
+    },
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-03-29T17:26:16.833187",
+    "workflow_id": "WF-EMPL-F86C40",
+    "agent": "OrchestratorAgent",
+    "action": "retry_data_retrieval",
+    "details": {
+      "attempt": 2,
+      "error": "404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+    },
+    "status": "warning"
+  },
+  {
+    "timestamp": "2026-03-29T17:26:17.848969",
+    "workflow_id": "WF-EMPL-F86C40",
+    "agent": "DataRetrievalAgent",
+    "action": "start_retrieval",
+    "details": {
+      "workflow_type": "employee_onboarding",
+      "input": {
+        "name": "Rahul Sharma",
+        "employee_id": "EMP2026001",
+        "department": "Engineering"
+      }
+    },
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-03-29T17:26:17.850708",
+    "workflow_id": "WF-EMPL-F86C40",
+    "agent": "DataRetrievalAgent",
+    "action": "verify_employee",
+    "details": {
+      "verified": true,
+      "employee_id": "EMP2026001",
+      "name": "Rahul Sharma",
+      "department": "Engineering",
+      "joining_date": "2026-03-29",
+      "manager": "Rajesh Kumar",
+      "location": "Bangalore"
+    },
+    "status": "success"
+  },
+  {
+    "timestamp": "2026-03-29T17:26:18.003570",
+    "workflow_id": "WF-EMPL-F86C40",
+    "agent": "OrchestratorAgent",
+    "action": "retry_data_retrieval",
+    "details": {
+      "attempt": 3,
+      "error": "404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+    },
+    "status": "warning"
+  },
+  {
+    "timestamp": "2026-03-29T17:26:18.015179",
+    "workflow_id": "WF-EMPL-F86C40",
+    "agent": "OrchestratorAgent",
+    "action": "workflow_failed",
+    "details": {
+      "step": "data_retrieval",
+      "error": "404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+    },
+    "status": "error"
+  }
+]

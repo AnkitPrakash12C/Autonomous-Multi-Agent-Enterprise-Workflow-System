@@ -1,0 +1,63 @@
+{
+  "workflow_id": "WF-EMPL-7A83C0",
+  "workflow_type": "employee_onboarding",
+  "input_data": {
+    "name": "Rahul Sharma",
+    "employee_id": "EMP2026001",
+    "department": "Engineering"
+  },
+  "status": "failed",
+  "current_step": 1,
+  "steps_completed": [
+    "data_retrieval"
+  ],
+  "steps_failed": [
+    "decision",
+    "decision",
+    "decision"
+  ],
+  "retry_counts": {
+    "decision": 3
+  },
+  "collected_data": {
+    "employee_record": {
+      "verified": true,
+      "employee_id": "EMP2026001",
+      "name": "Rahul Sharma",
+      "department": "Engineering",
+      "joining_date": "2026-03-29",
+      "manager": "Rajesh Kumar",
+      "location": "Bangalore"
+    },
+    "validation": {
+      "valid": true,
+      "completeness_score": 80,
+      "missing_fields": [],
+      "warnings": [],
+      "summary": "Data collected successfully (validation skipped)"
+    }
+  },
+  "decisions": [],
+  "actions_taken": [],
+  "errors": [
+    {
+      "step": "decision",
+      "error": "404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+      "timestamp": "2026-03-29T17:45:56.727402"
+    },
+    {
+      "step": "decision",
+      "error": "404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+      "timestamp": "2026-03-29T17:45:58.908343"
+    },
+    {
+      "step": "decision",
+      "error": "404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+      "timestamp": "2026-03-29T17:46:00.357355"
+    }
+  ],
+  "created_at": "2026-03-29T17:45:54.133973",
+  "updated_at": "2026-03-29T17:46:00.357355",
+  "human_approvals_needed": [],
+  "human_approvals_received": []
+}

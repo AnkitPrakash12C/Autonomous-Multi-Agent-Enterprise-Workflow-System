@@ -1,0 +1,79 @@
+{
+  "workflow_id": "WF-EMPL-4039E6",
+  "workflow_type": "employee_onboarding",
+  "input_data": {
+    "name": "Rahul Sharma",
+    "employee_id": "EMP2026001",
+    "department": "Engineering"
+  },
+  "status": "completed",
+  "current_step": 4,
+  "steps_completed": [
+    "data_retrieval",
+    "decision",
+    "action_execution",
+    "verification"
+  ],
+  "steps_failed": [],
+  "retry_counts": {},
+  "collected_data": {
+    "employee_record": {
+      "verified": true,
+      "employee_id": "EMP2026001",
+      "name": "Rahul Sharma",
+      "department": "Engineering",
+      "joining_date": "2026-03-29",
+      "manager": "Rajesh Kumar",
+      "location": "Bangalore"
+    },
+    "validation": {
+      "valid": true,
+      "completeness_score": 85,
+      "missing_fields": [],
+      "warnings": [],
+      "summary": "All requested fields are present and match. The employee record contains essential details for onboarding."
+    }
+  },
+  "decisions": [
+    {
+      "decision": "PROCEED",
+      "requires_human_approval": false,
+      "approval_reason": "",
+      "approval_step": null,
+      "automated_steps": [
+        "create_accounts",
+        "assign_equipment",
+        "schedule_orientation",
+        "assign_buddy",
+        "send_welcome_email"
+      ],
+      "risk_level": "LOW",
+      "risk_reasons": [],
+      "next_actions": [
+        "Initiate creation of employee accounts (email, system access).",
+        "Trigger equipment assignment process.",
+        "Schedule new hire orientation session.",
+        "Assign onboarding buddy.",
+        "Send welcome email to Rahul Sharma."
+      ],
+      "business_rules_applied": [
+        "Employee record must be verified to proceed.",
+        "Employee record must be valid and contain essential details for onboarding.",
+        "No critical missing fields or warnings should be present."
+      ],
+      "estimated_completion_hours": 4,
+      "decision_rationale": "The employee record for Rahul Sharma is verified and validated, with a completeness score of 85% deemed sufficient, and no missing critical fields or warnings. All essential details for onboarding are present and match the original request. The workflow can proceed with automated steps without human intervention or elevated risk."
+    }
+  ],
+  "actions_taken": [
+    "accounts_created",
+    "equipment_assigned",
+    "welcome_email",
+    "execution_summary"
+  ],
+  "errors": [],
+  "created_at": "2026-03-29T18:03:58.408923",
+  "updated_at": "2026-03-29T18:04:33.778147",
+  "human_approvals_needed": [],
+  "human_approvals_received": []
+}
