@@ -109,17 +109,6 @@ python main.py
 
 ---
 
-## ✅ Hackathon Evaluation Criteria Coverage
-
-| Criterion | Implementation |
-|-----------|----------------|
-| Depth of autonomy | 4-phase pipeline runs end-to-end with zero human input |
-| Error recovery | 3-retry logic with state persistence at every phase |
-| Auditability | Every agent decision logged to JSON with timestamp + agent ID |
-| Real-world applicability | 4 real enterprise processes with realistic data models |
-
----
-
 ## 🛠️ Tech Stack
 - **LLM**: Google Gemini 2.5 Flash
 - **Orchestration**: Custom multi-agent pipeline (Python)
